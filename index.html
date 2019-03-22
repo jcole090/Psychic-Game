@@ -1,0 +1,69 @@
+<!Doctype html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Psychic Game</title>
+<link rel="stylesheet" href="./assets/css/style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+<div class="Jumbotron">
+
+    <h1 class="text center">Psychic Game<h1>
+        <h2 class="text center">Im thinking of a number 1-5 You have 5 tries to guess it or your device will self destruct!</h2>
+ 
+
+
+ </div>
+</div>
+
+<div class="Your-Answer"> 
+    <h1 class="text center"> Your Answer </h1> 
+     <p class="answer"></p>
+
+</div>
+
+<script>
+
+$(document).ready(function() {
+
+var computerpick = Math.floor(Math.random() * 5) + 1;
+
+console.log("computer pick:" + computerpick);
+
+ console.log("UserGuess" + userGuess);
+ document.getElementsByClassName("answer").append(userGuess);
+
+ if (userGuess == computerpick) {
+     alert("You guessed correctly");
+ }
+ else{
+     alert("wrong!")
+ }
+});
+
+
+
+</script>
+    
+
+</body>
+
+
+
+                                  
+
+
+
+
+
+
+
+
+
+
+
+
+</html> 
